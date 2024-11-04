@@ -1,0 +1,146 @@
+[
+  {
+    "product_id": 301,
+    "product_title": "iPhone 14 Pro Max",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Phones",
+    "price": 1199.99,
+    "description": "Apple's latest smartphone with ProMotion display, A16 Bionic chip, and advanced camera system.",
+    "Specification": [
+      "Screen Size: 6.7 inches",
+      "Storage: 256GB",
+      "Camera: 48MP main, 12MP ultra-wide",
+      "Battery Life: Up to 29 hours"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 302,
+    "product_title": "Microsoft Surface Laptop Studio",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Laptops",
+    "price": 2199.99,
+    "description": "A versatile 2-in-1 laptop with a high-res touch display, powerful graphics, and a flexible hinge.",
+    "Specification": [
+      "Screen Size: 14.4 inches",
+      "Resolution: 2400 x 1600",
+      "Processor: Intel Core i7",
+      "Graphics: NVIDIA RTX 3050 Ti"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 303,
+    "product_title": "Canon EOS R5",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Cameras",
+    "price": 3899.99,
+    "description": "A professional mirrorless camera with 45MP resolution, 8K video, and advanced autofocus.",
+    "Specification": [
+      "Resolution: 45MP",
+      "Video: 8K",
+      "Lens Mount: RF",
+      "ISO Range: 100-51200"
+    ],
+    "availability": false,
+    "rating": 4.8
+  },
+  {
+    "product_id": 304,
+    "product_title": "Sony WH-1000XM5",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Headphones",
+    "price": 399.99,
+    "description": "Noise-canceling wireless headphones with superb sound quality and long battery life.",
+    "Specification": [
+      "Battery Life: 30 hours",
+      "Noise Cancellation: Active",
+      "Bluetooth Version: 5.2",
+      "Weight: 250 grams"
+    ],
+    "availability": true,
+    "rating": 4.7
+  },
+  {
+    "product_id": 305,
+    "product_title": "Samsung Galaxy Tab S8 Ultra",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Tablets",
+    "price": 1099.99,
+    "description": "A high-end tablet with a large AMOLED display, S-Pen support, and powerful performance for multitasking.",
+    "Specification": [
+      "Screen Size: 14.6 inches",
+      "Resolution: 2960 x 1848",
+      "Processor: Snapdragon 8 Gen 1",
+      "Battery: 11200mAh"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 306,
+    "product_title": "Bose Soundbar 700",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Speakers",
+    "price": 799.99,
+    "description": "A premium soundbar with voice control, immersive sound, and sleek design.",
+    "Specification": [
+      "Connectivity: Bluetooth, Wi-Fi",
+      "Dimensions: 38.5 x 2.25 x 4.25 inches",
+      "Voice Assistants: Alexa, Google Assistant",
+      "Weight: 10.5 pounds"
+    ],
+    "availability": false,
+    "rating": 4.6
+  },
+  {
+    "product_id": 307,
+    "product_title": "ASUS ROG Strix G15",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Laptops",
+    "price": 1699.99,
+    "description": "A gaming laptop with AMD Ryzen 7 processor, RTX 3070 graphics, and high refresh rate display.",
+    "Specification": [
+      "Screen Size: 15.6 inches",
+      "Resolution: FHD, 300Hz",
+      "Processor: AMD Ryzen 7",
+      "Graphics: NVIDIA GeForce RTX 3070"
+    ],
+    "availability": true,
+    "rating": 4.5
+  },
+  {
+    "product_id": 308,
+    "product_title": "Google Nest Hub Max",
+    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "category": "Smart Home",
+    "price": 229.99,
+    "description": "A smart display with Google Assistant, a large screen, and high-quality audio for your smart home needs.",
+    "Specification": [
+      "Screen Size: 10 inches",
+      "Resolution: HD",
+      "Camera: 6.5MP",
+      "Connectivity: Wi-Fi, Bluetooth"
+    ],
+    "availability": true,
+    "rating": 4.6
+  },
+  {
+    "product_id": 309,
+    "product_title": "DJI Mini 3 Pro",
+    "product_image": "https://i.ibb.co.com/vwx456/image-24.jpg",
+    "category": "Drones",
+    "price": 759.99,
+    "description": "A compact and powerful drone with 4K HDR video, long battery life, and intelligent flight modes.",
+    "Specification": [
+      "Camera: 4K HDR",
+      "Flight Time: 34 minutes",
+      "Range: 10 km",
+      "Weight: 249 grams"
+    ],
+    "availability": true,
+    "rating": 4.8
+  }
+]
