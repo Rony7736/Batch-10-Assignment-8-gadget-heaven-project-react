@@ -1,0 +1,39 @@
+[
+  {
+    "id": 1,
+    "category": "All",
+    "slug": "all"
+  },
+  {
+    "id": 2,
+    "category": "Phones",
+    "slug": "phones"
+  },
+  {
+    "id": 3,
+    "category": "Laptops",
+    "slug": "laptops"
+  },
+
+  {
+    "id": 4,
+    "category": "Cameras",
+    "slug": "cameras"
+  },
+  {
+    "id": 5,
+    "category": "Headphones",
+    "slug": "headphones"
+  },
+  {
+    "id": 6,
+    "category": "Drones",
+    "slug": "drones"
+  },
+  {
+    "id": 7,
+    "category": "MacBook",
+    "slug": "macBook"
+  }
+ 
+]

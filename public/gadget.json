@@ -1,8 +1,8 @@
 [
   {
-    "product_id": 301,
+    "product_id": 1,
     "product_title": "iPhone 14 Pro Max",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "product_image": "https://i.ibb.co.com/PZfjw6g/iphone-14-pro-max.jpg",
     "category": "Phones",
     "price": 1199.99,
     "description": "Apple's latest smartphone with ProMotion display, A16 Bionic chip, and advanced camera system.",
@@ -16,9 +16,9 @@
     "rating": 4.9
   },
   {
-    "product_id": 302,
-    "product_title": "Microsoft Surface Laptop Studio",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "product_id": 2,
+    "product_title": "Hp Laptop",
+    "product_image": "https://i.ibb.co.com/6Pv41Cp/hp-laptop.jpg",
     "category": "Laptops",
     "price": 2199.99,
     "description": "A versatile 2-in-1 laptop with a high-res touch display, powerful graphics, and a flexible hinge.",
@@ -32,9 +32,9 @@
     "rating": 4.7
   },
   {
-    "product_id": 303,
-    "product_title": "Canon EOS R5",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "product_id": 3,
+    "product_title": "Canon EOS Mark ll",
+    "product_image": "https://i.ibb.co.com/WWHtVRf/canoon-mark-2.jpg",
     "category": "Cameras",
     "price": 3899.99,
     "description": "A professional mirrorless camera with 45MP resolution, 8K video, and advanced autofocus.",
@@ -48,9 +48,9 @@
     "rating": 4.8
   },
   {
-    "product_id": 304,
+    "product_id": 4,
     "product_title": "Sony WH-1000XM5",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "product_image": "https://i.ibb.co.com/HrDvRym/sony-headphone.jpg",
     "category": "Headphones",
     "price": 399.99,
     "description": "Noise-canceling wireless headphones with superb sound quality and long battery life.",
@@ -64,10 +64,10 @@
     "rating": 4.7
   },
   {
-    "product_id": 305,
-    "product_title": "Samsung Galaxy Tab S8 Ultra",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
-    "category": "Tablets",
+    "product_id": 5,
+    "product_title": "Samsung Galaxy note10",
+    "product_image": "https://i.ibb.co.com/5smWjtp/sm-note-10.jpg",
+    "category": "Phones",
     "price": 1099.99,
     "description": "A high-end tablet with a large AMOLED display, S-Pen support, and powerful performance for multitasking.",
     "Specification": [
@@ -80,9 +80,9 @@
     "rating": 4.6
   },
   {
-    "product_id": 306,
+    "product_id": 6,
     "product_title": "Bose Soundbar 700",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "product_image": "https://i.ibb.co.com/tHthmLR/Bose-Soundbar-700.jpg",
     "category": "Speakers",
     "price": 799.99,
     "description": "A premium soundbar with voice control, immersive sound, and sleek design.",
@@ -96,9 +96,9 @@
     "rating": 4.6
   },
   {
-    "product_id": 307,
-    "product_title": "ASUS ROG Strix G15",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "product_id": 7,
+    "product_title": "ASUS Vivobook 15 Core i3 11th",
+    "product_image": "https://i.ibb.co.com/CJKcDSv/asus-laptop.jpg",
     "category": "Laptops",
     "price": 1699.99,
     "description": "A gaming laptop with AMD Ryzen 7 processor, RTX 3070 graphics, and high refresh rate display.",
@@ -112,9 +112,9 @@
     "rating": 4.5
   },
   {
-    "product_id": 308,
+    "product_id": 8,
     "product_title": "Google Nest Hub Max",
-    "product_image": "https://i.ibb.co.com/LnQnKXR/image-7.jpg",
+    "product_image": "https://i.ibb.co.com/B67vKCM/Google-Nest-Hub-Max.jpg",
     "category": "Smart Home",
     "price": 229.99,
     "description": "A smart display with Google Assistant, a large screen, and high-quality audio for your smart home needs.",
@@ -128,9 +128,9 @@
     "rating": 4.6
   },
   {
-    "product_id": 309,
+    "product_id": 9,
     "product_title": "DJI Mini 3 Pro",
-    "product_image": "https://i.ibb.co.com/vwx456/image-24.jpg",
+    "product_image": "https://i.ibb.co.com/Jv8vH8D/DJI-Mini-3-Pro.jpg",
     "category": "Drones",
     "price": 759.99,
     "description": "A compact and powerful drone with 4K HDR video, long battery life, and intelligent flight modes.",
