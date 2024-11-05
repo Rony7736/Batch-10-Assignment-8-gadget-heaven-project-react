@@ -1,5 +1,6 @@
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { useLoaderData, useParams } from "react-router-dom";
+import { addToStoreCartList, addToStoreWishList } from "../Utility";
 
 const PhoneDetails = () => {
     const data = useLoaderData()
@@ -13,7 +14,25 @@ const PhoneDetails = () => {
     console.log(phone);
 
 
+    // const [phonedata, setPhoneData] = useState({})
+
+    // useEffect(() => {
+    //     const phone = data.find(phone => phone.product_id === phoneId)
+    //     // console.log(phone);
+    //     setPhoneData(phone)
+        
+    // }, [data, phoneId])
+
+
     const { product_id, product_title, product_image, price, description, Specification, availability, rating } = phone
+
+    const handleAddToCartList = (id)=> {
+        addToStoreCartList(id)
+    }
+
+    const handleAddToWishList = (id)=> {
+        addToStoreWishList(id)
+    }
 
     return (
         <div className="bg-[#9538E2] min-h-[400px] rounded-b-3xl relative mb-[400px]">
@@ -61,8 +80,11 @@ const PhoneDetails = () => {
                         </div>
 
                         <div className="card-actions mt-4">
-                            <button className="flex items-center gap-2 border p-2 px-10 rounded-full bg-[#8433C8] text-white font-bold">Add to Cart <CiShoppingCart size={20}></CiShoppingCart></button>
-                            <span className="bg-white border rounded-full p-2 mr-6"><CiHeart size={20}></CiHeart></span>
+                            <button onClick={()=>handleAddToCartList(phoneId)} className="flex items-center gap-2 border p-2 px-10 rounded-full bg-[#8433C8] text-white font-bold">Add to Cart <CiShoppingCart size={20}></CiShoppingCart></button>
+                            
+                            <button onClick={()=> handleAddToWishList(phoneId)} className="bg-white border rounded-full p-2 mr-6">
+                            <CiHeart size={20}></CiHeart>
+                            </button>
 
                         </div>
                     </div>
