@@ -4,7 +4,7 @@ import { CiHeart } from "react-icons/ci";
 
 const Navbar = () => {
     return (
-        <div className="navbar bg-[#9538E2] rounded-t-3xl px-40 flex items-center">
+        <div className="navbar bg-[#9538E2] rounded-t-3xl px-40 pt-6 flex items-center">
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -32,15 +32,15 @@ const Navbar = () => {
             </div>
             <div className="navbar-center hidden lg:flex items-center">
                 <ul className="menu menu-horizontal px-1 gap-8 text-white">
-                    <NavLink to="/">Home</NavLink>
-                    <NavLink to="/statistics">Statistics</NavLink>
-                    <NavLink to="/dashboard">Dashboard</NavLink>
-                    <NavLink to="/phone">Phone</NavLink>
+                    <NavLink className={({ isActive }) => `text-base ${isActive ? 'text-warning font-bold' : 'hover:text-warning'}`} to="/">Home</NavLink>
+                    <NavLink className={({ isActive }) => `text-base ${isActive ? 'text-warning font-bold' : 'hover:text-warning'}`} to="/statistics">Statistics</NavLink>
+                    <NavLink className={({ isActive }) => `text-base ${isActive ? 'text-warning font-bold' : 'hover:text-warning'}`} to="/dashboard">Dashboard</NavLink>
+                    <NavLink className={({ isActive }) => `text-base ${isActive ? 'text-warning font-bold' : 'hover:text-warning'}`} to="/phone">Phone</NavLink>
                 </ul>
             </div>
             <div className="navbar-end gap-4">
-                <span><CiShoppingCart size={24}></CiShoppingCart></span>
-                <span className="pr-6"><CiHeart size={24}></CiHeart></span>
+                <span className="bg-white border rounded-full p-2"><CiShoppingCart size={20}></CiShoppingCart></span>
+                <span className="bg-white border rounded-full p-2 mr-6"><CiHeart size={20}></CiHeart></span>
             </div>
         </div>
     );

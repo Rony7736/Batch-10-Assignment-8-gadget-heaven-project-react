@@ -20,9 +20,9 @@ const Cards = () => {
             setGadgets(data)
             return
         }
-        const filterData = data.filter((i)=> i.category.toLowerCase() === name)
+        const filterData = [...data].filter((i)=> i.category.toLowerCase() === name)
         setGadgets(filterData)
-        console.log(filterData, name);
+        // console.log(filterData, name);
     }, [data, name])
     
     

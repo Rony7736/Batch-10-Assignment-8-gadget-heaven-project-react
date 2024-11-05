@@ -113,19 +113,19 @@
   },
   {
     "product_id": 8,
-    "product_title": "Google Nest Hub Max",
-    "product_image": "https://i.ibb.co.com/B67vKCM/Google-Nest-Hub-Max.jpg",
-    "category": "Smart Home",
-    "price": 229.99,
-    "description": "A smart display with Google Assistant, a large screen, and high-quality audio for your smart home needs.",
+    "product_title": "Canon EOS R7",
+    "product_image": "https://i.ibb.co.com/yNjhwJB/canoon-EOS-r7.jpg",
+    "category": "Cameras",
+    "price": 3500.99,
+    "description": "A professional mirrorless camera with 45MP resolution, 8K video, and advanced autofocus.",
     "Specification": [
-      "Screen Size: 10 inches",
-      "Resolution: HD",
-      "Camera: 6.5MP",
-      "Connectivity: Wi-Fi, Bluetooth"
+      "Resolution: 40MP",
+      "Video: 8K",
+      "Lens Mount: RF",
+      "ISO Range: 100-51200"
     ],
-    "availability": true,
-    "rating": 4.6
+    "availability": false,
+    "rating": 4.7
   },
   {
     "product_id": 9,
@@ -142,5 +142,21 @@
     ],
     "availability": true,
     "rating": 4.8
+  },
+  {
+    "product_id": 10,
+    "product_title": "Sony MH-2000XW5",
+    "product_image": "https://i.ibb.co.com/XSbx31X/images.jpg",
+    "category": "Headphones",
+    "price": 350.50,
+    "description": "Noise-canceling wireless headphones with superb sound quality and long battery life.",
+    "Specification": [
+      "Battery Life: 24 hours",
+      "Noise Cancellation: Active",
+      "Bluetooth Version: 7.2",
+      "Weight: 200 grams"
+    ],
+    "availability": true,
+    "rating": 4.6
   }
 ]

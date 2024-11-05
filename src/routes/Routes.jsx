@@ -5,6 +5,7 @@ import Statistics from "../pages/Statistics";
 import Dashboard from "../pages/Dashboard";
 import Phones from "../pages/Phones";
 import Cards from "../components/Cards";
+import PhoneDetails from "../pages/PhoneDetails";
 // import Error from "../pages/Error";
 
 const router = createBrowserRouter([
@@ -42,6 +43,11 @@ const router = createBrowserRouter([
       {
         path: "/phone",
         element: <Phones></Phones>,
+      },
+      {
+        path: "/phnoneDetails",
+        element: <PhoneDetails></PhoneDetails>,
+        loader: () => fetch('../gadget.json'),
       },
 
     ]

@@ -1,10 +1,12 @@
+import { useNavigate } from "react-router-dom";
 
 const Card = ({ card }) => {
     // console.log(card);
 
     const { product_id, product_title, product_image, category, price, description, Specification, availability, rating } = card
 
-
+    const navigate = useNavigate()
+    
 
     return (
 
@@ -14,10 +16,10 @@ const Card = ({ card }) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{product_title}</h2>
-                <p>Price: {price}k</p>
+                <p className="font-bold text-[#6B6B6F]">Price: {price}k</p>
 
                 <div>
-                    <button className="border-2 border-[#8533c8a2] rounded-full py-2 px-6 text-[#8433C8] font-bold">View Details</button>
+                    <button onClick={()=> navigate('/phnoneDetails')} className="border-2 border-[#8533c8a2] rounded-full py-2 px-6 text-[#8433C8] font-bold">View Details</button>
                 </div>
             </div>
         </div>
