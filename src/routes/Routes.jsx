@@ -45,7 +45,7 @@ const router = createBrowserRouter([
         element: <Phones></Phones>,
       },
       {
-        path: "/phnoneDetails",
+        path: "/phnoneDetails/:id",
         element: <PhoneDetails></PhoneDetails>,
         loader: () => fetch('../gadget.json'),
       },

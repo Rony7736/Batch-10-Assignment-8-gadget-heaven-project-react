@@ -1,12 +1,12 @@
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 const Card = ({ card }) => {
     // console.log(card);
 
     const { product_id, product_title, product_image, category, price, description, Specification, availability, rating } = card
 
-    const navigate = useNavigate()
-    
+
+
 
     return (
 
@@ -19,7 +19,9 @@ const Card = ({ card }) => {
                 <p className="font-bold text-[#6B6B6F]">Price: {price}k</p>
 
                 <div>
-                    <button onClick={()=> navigate('/phnoneDetails')} className="border-2 border-[#8533c8a2] rounded-full py-2 px-6 text-[#8433C8] font-bold">View Details</button>
+                    <Link to={`/phnoneDetails/${product_id}`}>
+                        <button  className="border-2 border-[#8533c8a2] rounded-full py-2 px-6 text-[#8433C8] font-bold">View Details</button>
+                    </Link>
                 </div>
             </div>
         </div>
@@ -27,3 +29,6 @@ const Card = ({ card }) => {
 };
 
 export default Card;
+
+    // const navigate = useNavigate()
+// onClick={(card) => navigate('/phnoneDetails')}
