@@ -13,15 +13,25 @@ const Dashboard = () => {
     const data = useLoaderData()
 
     const [cartList, setCartList] = useState([])
+
     useEffect(() => {
-        const cartList = getStoreCartList()
-        const storeCartListInt = cartList.map(id => parseInt(id))
+        const cartListEffect = getStoreCartList()
+        const storeCartListInt = cartListEffect.map(id => parseInt(id))
 
         const singleCartList = data.filter(cart => storeCartListInt.includes(cart.product_id))
 
         setCartList(singleCartList)
 
     }, [data])
+console.log(cartList);
+
+    // shot data
+    const handleSort = (sortBy) => {
+        if(sortBy ==='price'){
+            const sorted = [...cartList].sort((a,b)=> b.price - a.price)
+            setCartList(sorted)
+        }
+    }
 
 
     return (
@@ -49,7 +59,7 @@ const Dashboard = () => {
                             <div className="flex items-center gap-6">
                                 <p className="text-2xl font-bold">Total Cost:</p>
                                 <div className="flex items-center gap-6">
-                                    <button className="py-2 px-10 border-2 font-bold border-[#9237DE] text-[#9237DE] rounded-full flex items-center gap-2">Sort By Price <FaSortNumericDownAlt></FaSortNumericDownAlt> </button>
+                                    <button onClick={()=> handleSort('price')} className="py-2 px-10 border-2 font-bold border-[#9237DE] text-[#9237DE] rounded-full flex items-center gap-2">Sort By Price <FaSortNumericDownAlt></FaSortNumericDownAlt> </button>
                                     <button className="py-2 px-10 border-2 font-bold border-[#9237DE] rounded-full">Purchase</button>
                                 </div>
                             </div>
