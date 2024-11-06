@@ -158,5 +158,40 @@
     ],
     "availability": true,
     "rating": 4.6
+  },
+  {
+    "product_id": 10,
+    "product_title": "Samsung-Galaxy-A72",
+    "product_image": "https://i.ibb.co.com/LdV4SP7/Samsung-Galaxy-A72.jpg",
+    "category": "Phones",
+    "price": 1000.99,
+    "description": "A high-end tablet with a large AMOLED display, S-Pen support, and powerful performance for multitasking.",
+    "Specification": [
+      "Screen Size: 6.7 inches",
+      "Storage: 256GB",
+      "Camera: 48MP main, 12MP ultra-wide",
+      "Battery Life: Up to 29 hours"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 11,
+    "product_title": "iphone 15 pro max",
+    "product_image": "https://i.ibb.co.com/yXVk2Dy/Iphone-15.jpg",
+    "category": "Phones",
+    "price": 1500.99,
+    "description": "Apple's latest smartphone with ProMotion display, A16 Bionic chip, and advanced camera system.",
+    "Specification": [
+      "Screen Size: 6.7 inches",
+      "Storage: 256GB",
+      "Camera: 48MP main, 12MP ultra-wide",
+      "Battery Life: Up to 29 hours"
+    ],
+    "availability": true,
+    "rating": 4.9
   }
 ]
+
+
+
