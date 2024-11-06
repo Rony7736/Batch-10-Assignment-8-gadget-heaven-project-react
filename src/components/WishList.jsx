@@ -18,6 +18,7 @@ const WishList = () => {
     }, [data])
     return (
         <div>
+            <h1 className="text-2xl font-bold mt-12 ml-12">Wish List</h1>
             <div className="grid grid-cols-1">
 
                 {
