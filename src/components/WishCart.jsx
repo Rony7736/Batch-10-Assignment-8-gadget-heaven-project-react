@@ -1,9 +1,7 @@
-/* eslint-disable react/prop-types */
 
+const WishCart = ({cart}) => {
 
-const CartList = ({ cart }) => {
-
-    const { product_id, product_title, product_image, price, description, Specification, availability, rating } = cart
+    const { product_id, product_title, product_image, price, description, availability, rating } = cart
 
     return (
         <div className="card card-compact flex flex-row bg-base-100 shadow-xl p-6 mt-6 border-2">
@@ -19,4 +17,4 @@ const CartList = ({ cart }) => {
     );
 };
 
-export default CartList;
+export default WishCart;

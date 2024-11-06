@@ -1,6 +1,7 @@
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { useLoaderData, useParams } from "react-router-dom";
-import { addToStoreCartList, addToStoreWishList } from "../Utility";
+import { addToStoreCartList, addToStoreWishList, getStoredWishList } from "../Utility";
+import { useEffect, useState } from "react";
 
 const PhoneDetails = () => {
     const data = useLoaderData()
@@ -8,30 +9,43 @@ const PhoneDetails = () => {
 
     const { id } = useParams()
     const phoneId = parseInt(id)
-    // console.log(typeof phoneId);
+    // console.log(phone);
 
     const phone = data.find(phone => phone.product_id === phoneId)
-    console.log(phone);
-
-
-    // const [phonedata, setPhoneData] = useState({})
-
-    // useEffect(() => {
-    //     const phone = data.find(phone => phone.product_id === phoneId)
-    //     // console.log(phone);
-    //     setPhoneData(phone)
-        
-    // }, [data, phoneId])
-
 
     const { product_id, product_title, product_image, price, description, Specification, availability, rating } = phone
 
-    const handleAddToCartList = (id)=> {
+
+
+    const handleAddToCartList = (id) => {
         addToStoreCartList(id)
     }
 
-    const handleAddToWishList = (id)=> {
-        addToStoreWishList(id)
+    const [isDisabled, setIsDisabled] = useState(false);
+    const handleAddToWishList = (id) => {
+        const d = getStoredWishList();
+        if (d.includes(id)) {
+            setIsDisabled(true);
+            return;
+        } else {
+            setIsDisabled(false);
+            addToStoreWishList(id);
+        }
+    };
+
+    const [wishdata, setWishData] = useState([])
+    // console.log(wishdata);
+
+    useEffect(() => {
+        const wishList = getStoredWishList()
+        setWishData(wishList)
+    }, [])
+
+    const handleWishList = (id) => {
+        const wishList = wishdata.find((list) => list == id)
+        // console.log(wishList, id);
+
+        return wishList ? true : false;
     }
 
     return (
@@ -52,7 +66,7 @@ const PhoneDetails = () => {
                         <p className="font-bold py-3">Price: {price}k</p>
 
                         <div className="badge badge-outline px-12 bg-[#EAF5E6] text-[#309C08]">{availability ? 'In Stock' : 'No Stock'}
-                        
+
                         </div>
 
                         <p className="py-3">{description}</p>
@@ -80,10 +94,10 @@ const PhoneDetails = () => {
                         </div>
 
                         <div className="card-actions mt-4">
-                            <button onClick={()=>handleAddToCartList(phoneId)} className="flex items-center gap-2 border p-2 px-10 rounded-full bg-[#8433C8] text-white font-bold">Add to Cart <CiShoppingCart size={20}></CiShoppingCart></button>
-                            
-                            <button onClick={()=> handleAddToWishList(phoneId)} className="bg-white border rounded-full p-2 mr-6">
-                            <CiHeart size={20}></CiHeart>
+                            <button onClick={() => handleAddToCartList(product_id)} className="flex items-center gap-2 border p-2 px-10 rounded-full bg-[#8433C8] text-white font-bold">Add to Cart <CiShoppingCart size={20}></CiShoppingCart></button>
+
+                            <button disabled={isDisabled} onClick={() => handleAddToWishList(phoneId)} className="bg-white border rounded-full p-2 mr-6">
+                                <CiHeart size={20}></CiHeart>
                             </button>
 
                         </div>
