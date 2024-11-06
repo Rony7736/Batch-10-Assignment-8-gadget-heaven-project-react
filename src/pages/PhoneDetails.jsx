@@ -5,7 +5,7 @@ import { useEffect, useState } from "react";
 
 const PhoneDetails = () => {
     const data = useLoaderData()
-    // console.log(data);
+    console.log(data);
 
     const { id } = useParams()
     const phoneId = parseInt(id)

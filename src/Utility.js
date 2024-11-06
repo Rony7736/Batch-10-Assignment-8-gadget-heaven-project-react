@@ -31,6 +31,8 @@ const addToStoreCartList = (id) => {
 // wish List
 const getStoredWishList = () => {
     const storedListStr = localStorage.getItem('wish-list')
+    // console.log(storedListStr);
+    
     if(storedListStr){
         const storedList = JSON.parse(storedListStr)
         return storedList
@@ -42,6 +44,8 @@ const getStoredWishList = () => {
 
 const addToStoreWishList = (id) => {
     const storedList = getStoredWishList()
+    console.log(storedList);
+    
     if(storedList.includes(id)){
         // already exist
         toast.error('Alredy Wish list Exist!');

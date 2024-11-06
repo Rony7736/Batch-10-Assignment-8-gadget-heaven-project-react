@@ -1,5 +1,5 @@
 /* eslint-disable react/prop-types */
-
+import { MdDeleteForever } from "react-icons/md";
 
 const CartList = ({ cart }) => {
 
@@ -11,7 +11,10 @@ const CartList = ({ cart }) => {
                 <img className="w-80 rounded-2xl" src={product_image} alt="" />
             </div>
             <div className="card-body">
-                <h2 className="card-title text-2xl font-bold">{product_title}</h2>
+                <div className="flex justify-between">
+                    <h2 className="card-title text-2xl font-bold">{product_title}</h2>
+                    <button className="bg-warning p-4 rounded-full"><MdDeleteForever size={24}></MdDeleteForever></button>
+                </div>
                 <p className="">{description}</p>
                 <p className="font-bold text-lg">Price: {price}k</p>
             </div>
