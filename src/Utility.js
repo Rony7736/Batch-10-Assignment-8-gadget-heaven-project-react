@@ -44,7 +44,6 @@ const getStoredWishList = () => {
 
 const addToStoreWishList = (id) => {
     const storedList = getStoredWishList()
-    console.log(storedList);
     
     if(storedList.includes(id)){
         // already exist
