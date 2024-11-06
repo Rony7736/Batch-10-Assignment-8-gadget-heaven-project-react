@@ -190,8 +190,41 @@
     ],
     "availability": true,
     "rating": 4.9
+  },
+  {
+    "product_id": 12,
+    "product_title": "redmi-note",
+    "product_image": "https://i.ibb.co.com/LCF78NQ/redmi-note.jpg",
+    "category": "Phones",
+    "price": 500.99,
+    "description": "Redmi phones are good.",
+    "Specification": [
+      "Screen Size: 6.7 inches",
+      "Storage: 256GB",
+      "Camera: 48MP main, 12MP ultra-wide",
+      "Battery Life: Up to 29 hours"
+    ],
+    "availability": true,
+    "rating": 4.9
+  },
+  {
+    "product_id": 13,
+    "product_title": "samsung-s-25",
+    "product_image": "https://i.ibb.co.com/vZmLpD1/samsung-s-25.jpg",
+    "category": "Phones",
+    "price": 400.99,
+    "description": "A high-end tablet with a large AMOLED display, S-Pen support,",
+    "Specification": [
+      "Screen Size: 6.7 inches",
+      "Storage: 256GB",
+      "Camera: 48MP main, 12MP ultra-wide",
+      "Battery Life: Up to 29 hours"
+    ],
+    "availability": true,
+    "rating": 4.9
   }
 ]
+
 
 
 
