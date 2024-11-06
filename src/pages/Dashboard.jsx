@@ -1,12 +1,13 @@
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
 import { FaSortNumericDownAlt } from "react-icons/fa";
 import WishList from "../components/WishList";
 import { getStoreCartList } from "../Utility";
 import CartList from "../components/CartList";
 import { useLoaderData } from "react-router-dom";
-const Dashboard = () => {
-
+import { MyContext } from "../layouts/MainLayout";
+const Dashboard = ({price}) => {
     
+    const {priceContext} = useContext(MyContext)
 
     const [cartOpen, setCartOpen] = useState(true)
 
@@ -23,7 +24,6 @@ const Dashboard = () => {
         setCartList(singleCartList)
 
     }, [data])
-console.log(cartList);
 
     // shot data
     const handleSort = (sortBy) => {
@@ -32,6 +32,8 @@ console.log(cartList);
             setCartList(sorted)
         }
     }
+
+   
 
 
     return (
@@ -57,7 +59,7 @@ console.log(cartList);
                         <div className="flex justify-between items-center mx-40 mt-12">
                             <h1 className="text-2xl font-bold">Cart</h1>
                             <div className="flex items-center gap-6">
-                                <p className="text-2xl font-bold">Total Cost:</p>
+                                <p className="text-2xl font-bold">Total Cost: ${priceContext}</p>
                                 <div className="flex items-center gap-6">
                                     <button onClick={()=> handleSort('price')} className="py-2 px-10 border-2 font-bold border-[#9237DE] text-[#9237DE] rounded-full flex items-center gap-2">Sort By Price <FaSortNumericDownAlt></FaSortNumericDownAlt> </button>
                                     <button className="py-2 px-10 border-2 font-bold border-[#9237DE] rounded-full">Purchase</button>

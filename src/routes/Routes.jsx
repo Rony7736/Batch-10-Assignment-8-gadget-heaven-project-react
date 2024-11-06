@@ -6,13 +6,13 @@ import Dashboard from "../pages/Dashboard";
 import Phones from "../pages/Phones";
 import Cards from "../components/Cards";
 import PhoneDetails from "../pages/PhoneDetails";
-// import Error from "../pages/Error";
+import Error from "../pages/Error";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: <MainLayout></MainLayout>,
-    // errorElement: <p><Error></Error></p>,
+    errorElement: <Error></Error>,
     children: [
       {
         path: "/",
@@ -22,12 +22,12 @@ const router = createBrowserRouter([
           {
             path: "/",
             element: <Cards></Cards>,
-            loader: () => fetch('../gadget.json'),
+            loader: () => fetch('/gadget.json'),
           },
           {
             path: "/category/:name",
             element: <Cards></Cards>,
-            loader: () => fetch('../gadget.json'),
+            loader: () => fetch('/gadget.json'),
           }
         ]
       },
@@ -39,17 +39,17 @@ const router = createBrowserRouter([
       {
         path: "/dashboard",
         element: <Dashboard></Dashboard>,
-        loader: () => fetch('../gadget.json'),
+        loader: () => fetch('/gadget.json'),
       },
       {
         path: "/phone",
         element: <Phones></Phones>,
-        loader: () => fetch('../gadget.json'),
+        loader: () => fetch('/gadget.json'),
       },
       {
         path: "/phnoneDetails/:id",
         element: <PhoneDetails></PhoneDetails>,
-        loader: () => fetch('../gadget.json'),
+        loader: () => fetch('/gadget.json'),
       },
 
     ]

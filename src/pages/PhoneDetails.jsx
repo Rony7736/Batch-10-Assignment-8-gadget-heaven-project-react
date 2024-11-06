@@ -1,11 +1,17 @@
 import { CiHeart, CiShoppingCart } from "react-icons/ci";
 import { useLoaderData, useParams } from "react-router-dom";
 import { addToStoreCartList, addToStoreWishList, getStoredWishList } from "../Utility";
-import { useEffect, useState } from "react";
+import { useContext, useEffect, useState } from "react";
+import toast from "react-hot-toast";
+import { MyContext } from "../layouts/MainLayout";
 
 const PhoneDetails = () => {
+    // console.log(priceList);
+    const {setPriceContext} = useContext(MyContext)
+    
+
     const data = useLoaderData()
-    console.log(data);
+    // console.log(data);
 
     const { id } = useParams()
     const phoneId = parseInt(id)
@@ -15,10 +21,9 @@ const PhoneDetails = () => {
 
     const { product_id, product_title, product_image, price, description, Specification, availability, rating } = phone
 
-
-
     const handleAddToCartList = (id) => {
         addToStoreCartList(id)
+        
     }
 
     const [isDisabled, setIsDisabled] = useState(false);
@@ -26,11 +31,12 @@ const PhoneDetails = () => {
         const d = getStoredWishList();
         if (d.includes(id)) {
             setIsDisabled(true);
-            return;
+            return toast.success('Successfully Add to Wish List!');
         } else {
             setIsDisabled(false);
             addToStoreWishList(id);
         }
+        
     };
 
     const [wishdata, setWishData] = useState([])
@@ -63,7 +69,7 @@ const PhoneDetails = () => {
 
                     <div className="">
                         <h2 className="card-title text-2xl pb-3 font-bold">{product_title}</h2>
-                        <p className="font-bold py-3">Price: {price}k</p>
+                        <p className="font-bold py-3">Price: ${price}</p>
 
                         <div className="badge badge-outline px-12 bg-[#EAF5E6] text-[#309C08]">{availability ? 'In Stock' : 'No Stock'}
 
@@ -94,7 +100,7 @@ const PhoneDetails = () => {
                         </div>
 
                         <div className="card-actions mt-4">
-                            <button onClick={() => handleAddToCartList(product_id)} className="flex items-center gap-2 border p-2 px-10 rounded-full bg-[#8433C8] text-white font-bold">Add to Cart <CiShoppingCart size={20}></CiShoppingCart></button>
+                            <button onClick={() => {setPriceContext(parseInt(price)); handleAddToCartList(product_id)}} className="flex items-center gap-2 border p-2 px-10 rounded-full bg-[#8433C8] text-white font-bold">Add to Cart <CiShoppingCart size={20}></CiShoppingCart></button>
 
                             <button disabled={isDisabled} onClick={() => handleAddToWishList(phoneId)} className="bg-white border rounded-full p-2 mr-6">
                                 <CiHeart size={20}></CiHeart>

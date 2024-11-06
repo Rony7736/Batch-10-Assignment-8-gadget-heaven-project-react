@@ -16,7 +16,7 @@ const CartList = ({ cart }) => {
                     <button className="bg-warning p-4 rounded-full"><MdDeleteForever size={24}></MdDeleteForever></button>
                 </div>
                 <p className="">{description}</p>
-                <p className="font-bold text-lg">Price: {price}k</p>
+                <p className="font-bold text-lg">Price: ${price}</p>
             </div>
         </div>
     );

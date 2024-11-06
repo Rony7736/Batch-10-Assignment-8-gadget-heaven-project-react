@@ -6,7 +6,7 @@ import Card from "../components/Card";
 const Phones = () => {
 
     const data = useLoaderData()
-    console.log(data);
+    // console.log(data);
 
     const [gadgets, setGadgets] = useState([])
 

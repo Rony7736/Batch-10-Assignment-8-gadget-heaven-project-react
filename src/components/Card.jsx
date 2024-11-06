@@ -16,7 +16,7 @@ const Card = ({ card }) => {
             </figure>
             <div className="card-body">
                 <h2 className="card-title">{product_title}</h2>
-                <p className="font-bold text-[#6B6B6F]">Price: {price}k</p>
+                <p className="font-bold text-[#6B6B6F]">Price: ${price}</p>
 
                 <div>
                     <Link to={`/phnoneDetails/${product_id}`}>

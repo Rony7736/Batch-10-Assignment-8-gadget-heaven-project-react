@@ -1,10 +1,16 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 import { CiShoppingCart } from "react-icons/ci";
 import { CiHeart } from "react-icons/ci";
 
 const Navbar = () => {
+
+    const {pathname} = useLocation()
+    const isHomePage = pathname === "/"; 
+        
+
     return (
-        <div className="navbar bg-[#9538E2] rounded-t-3xl px-40 pt-6 flex items-center">
+        <div className={`navbar rounded-t-3xl px-40 pt-6 flex items-center ${ isHomePage ? 'bg-[#9538E2]' : 'bg-slate-700'}`}>
+        
             <div className="navbar-start">
                 <div className="dropdown">
                     <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">

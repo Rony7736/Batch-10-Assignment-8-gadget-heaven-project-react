@@ -11,7 +11,7 @@ const WishCart = ({cart}) => {
             <div className="card-body">
                 <h2 className="card-title text-2xl font-bold">{product_title}</h2>
                 <p className="">{description}</p>
-                <p className="font-bold text-lg">Price: {price}k</p>
+                <p className="font-bold text-lg">Price: ${price}</p>
             </div>
         </div>
     );
